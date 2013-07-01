@@ -1,3 +1,9 @@
+a{
+    color: #000;
+}
+a:hover{
+    color: #000;
+}
 body {
     margin:0px;
     padding:0px;
