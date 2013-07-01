@@ -1,65 +1,112 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Sorryopenerp.github.io by sorryopenerp</title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>JB Clock</title>
+        <link rel="stylesheet" href="css/jbclock.css" type="text/css" media="all" />
+        <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+        <script type="text/javascript" src="js/jbclock.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                JBCountDown({
+                    secondsColor : "#FFF",
+                    secondsGlow  : "none",
+                    
+                    minutesColor : "#FFF",
+                    minutesGlow  : "none",
+                    
+                    hoursColor   : "#FFF",
+                    hoursGlow    : "none",
+                    
+                    daysColor    : "#FFF",
+                    daysGlow     : "none",
+                    
+		            startDate   : new Date("July 1, 2013 00:00:00").getTime()/1000,
+		            endDate     : new Date("July 1, 2013 21:00:00").getTime()/1000,
+		            now         : new Date().getTime()/1000,
+                });
+            });
+        </script>
+    </head>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Sorryopenerp.github.io</h1>
-        <p></p>
+    <body>
 
+        <div class="wrapper" style="margin-top:250px;">
 
-        <p class="view"><a href="https://github.com/sorryopenerp">View My GitHub Profile</a></p>
+            <h1>Hypocrisy Ends In</h1>
+            <h4></h4>
 
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+            <div class="clock">
+                <!-- Days -->
+                <div class="clock_days">
+                    <div class="bgLayer">
+                        <canvas id="canvas_days" width="122" height="122">
+                            Your browser does not support the HTML5 canvas tag.
+                        </canvas>
+                        <p class="val">0</p>
+                        <p class="type_days">Days</p>
+                    </div>
+                </div>
+                <!-- Days -->
+                <!-- Hours -->
+                <div class="clock_hours">
+                    <div class="bgLayer">
+                        <canvas id="canvas_hours" width="122" height="122">
+                            Your browser does not support the HTML5 canvas tag.
+                        </canvas>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+                        <p class="val">0</p>
+                        <p class="type_hours">Hours</p>
+                    </div>
+                </div>
+                <!-- Hours -->
+                <!-- Minutes -->
+                <div class="clock_minutes">
+                    <div class="bgLayer">
+                        <canvas id="canvas_minutes" width="122" height="122">
+                            Your browser does not support the HTML5 canvas tag.
+                        </canvas>
+                        <div class="text">
+                            <p class="val">0</p>
+                            <p class="type_minutes">Minutes</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Minutes -->
+                <!-- Seconds -->
+                <div class="clock_seconds">
+                    <div class="bgLayer">
+                        <canvas id="canvas_seconds" width="122" height="122">
+                            Your browser does not support the HTML5 canvas tag.
+                        </canvas>
+                        <p class="val">0</p>
+                        <p class="type_seconds">Seconds</p>
+                    </div>
+                </div>
+                <!-- Seconds -->
+            </div>
+        </div><!--/wrapper -->
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+        <div style="width:443px; margin:220px auto 0px;">
+        	<!-- AddThis Button BEGIN -->
+			<div class="addthis_toolbox addthis_default_style ">
+				<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+				<a class="addthis_button_tweet"></a>
+				<a class="addthis_button_pinterest_pinit"></a>
+				<a class="addthis_counter addthis_pill_style"></a>
+			</div>
+			<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51bc173019597874"></script>
+			<!-- AddThis Button END -->
+        </div>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+	<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    <a href="https://plus.google.com/106954446946187735373" rel="publisher">Google+</a>
-  </body>
+      ga('create', 'UA-12853548-8', 'sorryopenerp.com');
+      ga('send', 'pageview');
+    </script>
+    </body>
 </html>
