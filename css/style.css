@@ -749,3 +749,33 @@ h4.metrics{
 	font-size: 16px;
 	font-weight: 400;
 }
+
+ol.tumblr_posts{
+	padding:20px 20px 20px 20px;
+}
+div.tumblr_title{
+	font-size: 20px;
+	line-height: 30px;
+	padding-bottom:15px;
+	color: #ff4444;
+}
+ol.tumblr_posts li{
+	margin-bottom: 5em;
+}
+li.tumblr_link_post{
+	color: #ff44
+}
+li.tumblr_link_post a{
+	color:#ff1010;
+	font-size: 20px;
+	text-decoration: none;
+	padding-bottom: 2px;	
+	border-bottom: 1px dashed #ff1010;
+}
+li.tumblr_link_post a:hover{
+	color: #8b5bdd;
+	border-bottom: 1px dashed #8b5bdd;
+}
+.tumblr_body img{
+	text-align: center;
+}
